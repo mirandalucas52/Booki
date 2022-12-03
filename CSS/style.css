@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway";
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --main-blue: #0065fc;
+  --second-blue: #deebff;
+  --grey: #d9d9d9;
+  --card-shadow: 15px 0px 3px rgba(0, 0, 0, 0.1);
+  --title-text: 22px;
+  --bold-medium-text: 18px;
+  --normal-size-text: 16px;
+  --card-second-text: 14px;
+}
+
+/* HEADER */
+
+header img {
+  margin: 2.5rem 0;
+  height: 19px;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: var(--normal-size-text);
+}
+
+header li {
+  padding: 2.5rem;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+
+header li:hover {
+  color: var(--main-blue);
+  border-top: 3px solid var(--main-blue);
+}
+
+/* HEADER */
