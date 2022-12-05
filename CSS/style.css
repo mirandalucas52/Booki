@@ -12,7 +12,7 @@ body {
   font-family: "Raleway";
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 3rem;
+  height: 100vw;
 }
 
 a {
@@ -122,21 +122,22 @@ main .desktopVersion {
   visibility: visible;
 }
 
-main div {
+main .filtres,
+.info {
   display: flex;
   align-items: center;
   margin-top: 2.3rem;
 }
 
-main div h3 {
+main .filtres h3 {
   font-size: 18px;
 }
 
-main div ul {
+main .filtres ul {
   display: flex;
 }
 
-main div li {
+main .filtres li {
   display: flex;
   align-items: center;
   margin: 0 1.3rem;
@@ -146,11 +147,11 @@ main div li {
   cursor: pointer;
   transition-duration: 0.1s;
   transition: 0.2s;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 17px;
 }
 
-main div li:hover {
+main .filtres li:hover {
   background-color: var(--second-blue);
 }
 
@@ -179,6 +180,164 @@ main .info i {
 }
 /* FIRST SECTION */
 
+/* HEBERGEMENTS */
+
+/* HEBERGEMENTS A MARSEILLE */
+
+#hebergements {
+  margin-top: 2.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hebergementsMarseilleContainer {
+  width: 66%;
+  height: auto;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 2.4rem 2rem 0 2.4rem;
+}
+
+.hebergementsMarseilleContainer h3 {
+  font-weight: 800;
+  font-size: var(--title-text);
+  margin-bottom: 1.5rem;
+}
+
+.hebergementsMarseille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hebergementsMarseille .card {
+  width: 270px;
+  height: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.154);
+  border-radius: 1.2rem;
+  padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+  background-color: #fff;
+}
+
+.hebergementsMarseille .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 124px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hebergementsMarseille .card .container {
+  margin: initial;
+  display: flex;
+  flex-direction: column;
+}
+
+.hebergementsMarseille .card h4,
+p,
+.etoiles {
+  padding-left: 0.6rem;
+}
+
+.hebergementsMarseille .card h4 {
+  font-size: var(--normal-size-text);
+  margin: 9px 0 5px 0;
+}
+
+.hebergementsMarseille .card p {
+  font-size: var(--card-second-text);
+}
+
+.hebergementsMarseille .card .etoiles {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.hebergementsMarseille .card .etoiles i {
+  margin-right: -2px;
+}
+
+.hebergementsMarseille .card .etoiles i[data-active="true"] {
+  color: var(--main-blue);
+}
+
+.hebergementsMarseille .card .etoiles i[data-active="false"] {
+  color: #f2f2f2;
+}
+
+.hebergementsMarseilleContainer h5 {
+  font-size: var(--bold-medium-text);
+  margin-bottom: 2.6rem;
+  font-weight: 800;
+}
+/* HEBERGEMENTS A MARSEILLE */
+
+/* HEBERGEMENTS POPULAIRES */
+
+.hebergementsPopulairesContainer {
+  width: 28%;
+  height: 400px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+.hebergementsPopulaires .card {
+  width: 343px;
+  height: 144px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.154);
+  border-radius: 1.2rem;
+  padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+  background-color: #fff;
+}
+
+.hebergementsPopulaires .card img {
+  object-fit: cover;
+  width: 127px;
+  height: 134px;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.hebergementsPopulaires .card .container {
+  margin-top: 0.7rem;
+  margin-left: 1.1rem;
+}
+
+.hebergementsPopulaires h4 {
+  font-weight: bold;
+  font-size: var(--normal-size-text);
+}
+
+.hebergementsPopulaires p {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-size: var(--card-second-text);
+  padding-left: initial;
+}
+
+.hebergementsPopulaires .card .etoilesPopulaire {
+  font-size: 13px;
+}
+
+.hebergementsPopulaires .card .etoilesPopulaire i {
+  margin-right: -2px;
+}
+
+.hebergementsPopulaires .card .etoilesPopulaire i[data-active="true"] {
+  color: var(--main-blue);
+}
+
+.hebergementsPopulaires .card .etoilesPopulaire i[data-active="false"] {
+  color: #f2f2f2;
+}
+/* HEBERGEMENTS POPULAIRES */
+
+/* HEBERGEMENTS */
+
 /* MAIN */
 
 /* MOBILE VERSION */
@@ -196,7 +355,7 @@ main .info i {
     cursor: pointer;
     background-color: var(--main-blue);
     font-size: var(--normal-size-text);
-    font-weight: bold;
+    font-weight: 800;
     color: white;
     visibility: visible;
   }
