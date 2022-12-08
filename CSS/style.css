@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Raleway";
-  max-width: 1440px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 3rem;
 }
@@ -186,6 +186,7 @@ main .info i {
 .mainWrapFlex {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1400px;
 }
 
 /* MAIN WRAP FLEX */
@@ -213,19 +214,20 @@ main .info i {
 .mainWrapFlex h3 {
   font-weight: 800;
   font-size: var(--title-text);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .hebergementsMarseille {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 .hebergementsMarseille .card {
-  width: 250px;
+  width: 31%;
+  min-width: 250px;
   height: auto;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.154);
@@ -250,6 +252,8 @@ main .info i {
 #hebergements .card p,
 h4,
 .etoiles {
+  margin-top: initial;
+  margin-bottom: initial;
   padding-left: 0.6rem;
 }
 
@@ -280,8 +284,9 @@ h4,
 }
 
 .hebergementsMarseilleContainer h5 {
+  margin-top: 2.5rem;
   font-size: var(--bold-medium-text);
-  margin-bottom: 2.6rem;
+  margin-bottom: 2.9rem;
   font-weight: 800;
 }
 /* HEBERGEMENTS A MARSEILLE */
@@ -310,7 +315,7 @@ h4,
 
 .hebergementsPopulaires .card {
   margin-bottom: 2rem;
-  width: 350px;
+  width: auto;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -328,7 +333,17 @@ h4,
 }
 
 .hebergementsPopulaires .card .container {
-  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin-left: 0.7rem;
+}
+
+.hebergementsPopulaires .card .container h4,
+p {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .hebergementsPopulaires h4 {
@@ -337,19 +352,10 @@ h4,
 }
 
 .hebergementsPopulaires p {
-  margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
   font-size: var(--card-second-text);
   padding-left: initial;
 }
 
-.hebergementsPopulaires .etoiles {
-  padding-top: 1.2rem;
-}
-
-.hebergementsPopulaires .etoilesCoeurDeLeau {
-  padding-top: initial;
-}
 /* HEBERGEMENTS POPULAIRES */
 
 /* HEBERGEMENTS */
@@ -415,6 +421,31 @@ footer ul li {
 /* FOOTER */
 
 /* MOBILE VERSION */
+
+@media only screen and (max-width: 1400px) {
+  #hebergements {
+    flex-direction: column;
+  }
+
+  .hebergementsMarseilleContainer {
+    width: 100%;
+  }
+
+  .hebergementsPopulairesContainer {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .hebergementsPopulaires {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .hebergementsPopulaires .card {
+    width: 40%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   main .desktopVersion {
