@@ -72,30 +72,30 @@ header li:hover {
 /* MAIN */
 
 /* FIRST SECTION */
-main h1 {
+.firstSection h1 {
   font-size: var(--title-text);
   margin-bottom: 0.5rem;
 }
 
-main p {
+.firstSection p {
   font-weight: 400;
   font-size: var(--normal-size-text);
   padding-left: initial;
 }
 
-main form {
+.firstSection form {
   margin-top: 1rem;
   width: 100%;
 }
 
-main form span i {
+.firstSection form span i {
   margin-right: -4px;
   padding: 1rem 1.27rem;
   border-radius: 1rem 0 0 1rem;
   background-color: rgb(242, 242, 242);
 }
 
-main input {
+.firstSection input {
   margin-right: -3px;
   border-left: none;
   border-right: none;
@@ -107,11 +107,11 @@ main input {
   max-width: 12rem;
 }
 
-main input::placeholder {
+.firstSection input::placeholder {
   color: black;
 }
 
-main .desktopVersion {
+.firstSection .desktopVersion {
   padding: 0.9rem 1.2rem 0.9rem 1rem;
   border-radius: 0 1rem 1rem 0;
   border: none;
@@ -122,27 +122,27 @@ main .desktopVersion {
   color: white;
 }
 
-main .mobileVersion {
+.firstSection .mobileVersion {
   display: none;
 }
 
-main .filtres,
+.firstSection .filtres,
 .info {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
 }
 
-main .filtres h2 {
+.firstSection .filtres h2 {
   font-size: var(--bold-medium-text);
 }
 
-main .filtres ul {
+.firstSection .filtres ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-main .filtres li {
+.firstSection .filtres li {
   display: flex;
   align-items: center;
   margin: 0.5rem 0 0.5rem 1.7rem;
@@ -156,22 +156,22 @@ main .filtres li {
   font-size: 17px;
 }
 
-main .filtres li:hover {
+.firstSection .filtres li:hover {
   background-color: var(--second-blue);
 }
 
-main div ul i {
+section ul i {
   color: var(--main-blue);
   margin-right: 0.6rem;
   font-size: var(--title-text);
   font-weight: 100;
 }
 
-main .info span {
+.firstSection .info span {
   font-size: var(--normal-size-text);
 }
 
-main .info i {
+.firstSection .info i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,7 +209,7 @@ main .info i {
 
 .hebergementsMarseilleContainer {
   width: 66%;
-  height: auto;
+  height: 685px;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 2.4rem 2rem 0 2.4rem;
@@ -218,19 +218,18 @@ main .info i {
 .mainWrapFlex h3 {
   font-weight: 800;
   font-size: var(--title-text);
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.8rem;
 }
 
 .hebergementsMarseille {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
+  justify-content: space-between;
 }
 
 .hebergementsMarseille a {
+  margin-bottom: 1.3rem;
   width: 31%;
-  min-width: 250px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -288,7 +287,7 @@ h4,
 }
 
 .hebergementsMarseilleContainer h5 {
-  margin-top: 2.5rem;
+  margin-top: 1.3rem;
   font-size: var(--bold-medium-text);
   margin-bottom: 2.9rem;
   font-weight: 800;
@@ -299,22 +298,17 @@ h4,
 
 .hebergementsPopulairesContainer {
   width: 31%;
-  height: auto;
+  height: 685px;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 2.4rem 2rem 0.5rem 2rem;
 }
 
-.hebergementsPopulairesContainer .populaireTitreFlexbox i {
-  margin-top: -1.5rem;
+.hebergementsPopulairesContainer .chart {
+  position: relative;
+  float: right;
   color: var(--main-blue);
   font-size: var(--bold-medium-text);
-}
-
-.hebergementsPopulairesContainer .populaireTitreFlexbox {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .hebergementsPopulaires a figure {
@@ -422,10 +416,11 @@ footer ul li {
   font-weight: 500;
   font-size: var(--normal-size-text);
 }
-/* FOOTER */
 
-@media only screen and (max-width: 1400px) {
+/* FOOTER */
+@media only screen and (max-width: 992px) {
   #hebergements {
+    flex-direction: column;
   }
 
   .hebergementsMarseilleContainer {
@@ -433,6 +428,7 @@ footer ul li {
   }
 
   .hebergementsPopulairesContainer {
+    height: auto;
     width: 100%;
     margin-top: 4rem;
   }
@@ -445,12 +441,6 @@ footer ul li {
 
   .hebergementsPopulaires a {
     width: 40%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .hebergementsMarseille a {
-    width: 48%;
   }
 }
 /* MOBILE VERSION */
@@ -486,11 +476,21 @@ footer ul li {
     border-top: initial;
   }
 
-  main .desktopVersion {
+  .firstSection .desktopVersion {
     display: none;
   }
 
-  main .mobileVersion {
+  .firstSection form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .firstSection input {
+    max-width: 235px;
+    width: 100%;
+  }
+
+  .firstSection .mobileVersion {
     padding: 0.8rem 1rem;
     border-radius: 0 1rem 1rem 0;
     border: none;
@@ -503,20 +503,20 @@ footer ul li {
   }
 
   .firstSection {
-    margin: 3rem 2rem 1rem 2rem;
+    margin: 3rem 1.5rem 1rem 1.5rem;
   }
 
-  main .filtres h2 {
+  .firstSection .filtres h2 {
     font-size: 20px;
     margin-bottom: 0.5rem;
   }
 
-  main .filtres {
+  .firstSection .filtres {
     align-items: baseline;
     flex-direction: column;
   }
 
-  main .filtres li {
+  .firstSection .filtres li {
     font-size: 13px;
     width: 200px;
     height: 60px;
@@ -549,6 +549,7 @@ footer ul li {
     order: 2;
     background-color: #fff;
     margin-top: initial;
+    height: auto;
   }
 
   .hebergementsMarseilleContainer h5 {
@@ -561,6 +562,7 @@ footer ul li {
 
   .activites {
     margin: 6rem 2rem 1rem 2rem;
+    width: initial;
   }
 
   .flexActivites {
