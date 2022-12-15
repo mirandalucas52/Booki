@@ -1,0 +1,609 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway";
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --main-blue: #0065fc;
+  --second-blue: #deebff;
+  --grey: #d9d9d9;
+  --card-shadow: 15px 0px 3px rgba(0, 0, 0, 0.1);
+  --title-text: 22px;
+  --bold-medium-text: 18px;
+  --normal-size-text: 16px;
+  --card-second-text: 14px;
+}
+
+/* HEADER */
+
+header img {
+  margin: 2.7rem 0;
+  height: 19px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  font-size: var(--normal-size-text);
+}
+
+header li {
+  cursor: pointer;
+  padding: 2.7rem;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+
+header li:hover {
+  color: var(--main-blue);
+  border-top: 3px solid var(--main-blue);
+}
+
+/* HEADER */
+
+/* MAIN */
+
+/* FIRST SECTION */
+.firstSection h1 {
+  font-size: var(--title-text);
+  margin-bottom: 0.5rem;
+}
+
+.firstSection p {
+  font-weight: 400;
+  font-size: var(--normal-size-text);
+  padding-left: initial;
+}
+
+.firstSection form {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.firstSection form span i {
+  margin-right: -4px;
+  padding: 1rem 1.27rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: rgb(242, 242, 242);
+}
+
+.firstSection input {
+  margin-right: -3px;
+  border-left: none;
+  border-right: none;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+  padding: 14px 15px;
+  font-size: var(--normal-size-text);
+  font-weight: bold;
+  max-width: 12rem;
+}
+
+.firstSection input::placeholder {
+  color: black;
+}
+
+.firstSection .desktopVersion {
+  padding: 0.9rem 1.2rem 0.9rem 1rem;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-blue);
+  font-size: var(--normal-size-text);
+  font-weight: bold;
+  color: white;
+}
+
+.firstSection .mobileVersion {
+  display: none;
+}
+
+.firstSection .filtres,
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.firstSection .filtres h2 {
+  font-size: var(--bold-medium-text);
+}
+
+.firstSection .filtres ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.firstSection .filtres li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 0.5rem 1.7rem;
+  padding: 0.7rem 1.3rem;
+  border: 2px solid var(--grey);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  transition: 0.2s;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.firstSection .filtres li:hover {
+  background-color: var(--second-blue);
+}
+
+section ul i {
+  color: var(--main-blue);
+  margin-right: 0.6rem;
+  font-size: var(--title-text);
+  font-weight: 100;
+}
+
+.firstSection .info span {
+  font-size: var(--normal-size-text);
+}
+
+.firstSection .info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--main-blue);
+  margin-right: 0.7rem;
+  border: 1px solid var(--grey);
+  min-width: 1.7rem;
+  min-height: 1.7rem;
+  border-radius: 100%;
+}
+/* FIRST SECTION */
+
+/* MAIN WRAP FLEX */
+
+.mainWrapFlex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  flex-direction: column;
+}
+/* MAIN WRAP FLEX */
+
+/* HEBERGEMENTS */
+
+/* HEBERGEMENTS A MARSEILLE */
+
+#hebergements {
+  margin-top: 2.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hebergementsMarseilleContainer {
+  width: 66%;
+  height: 685px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 2.4rem 2rem 0 2.4rem;
+}
+
+.mainWrapFlex h3 {
+  font-weight: 800;
+  font-size: var(--title-text);
+  margin-bottom: 2.8rem;
+}
+
+.hebergementsMarseille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hebergementsMarseille a {
+  margin-bottom: 1.3rem;
+  width: 31%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.154);
+  border-radius: 1.2rem;
+  padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+  background-color: #fff;
+}
+
+.hebergementsMarseille a img {
+  object-fit: cover;
+  width: 100%;
+  height: 124px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hebergementsMarseille a .container {
+  margin: initial;
+  display: flex;
+  flex-direction: column;
+}
+
+#hebergements a p,
+h4,
+.etoiles {
+  margin-top: initial;
+  margin-bottom: initial;
+  padding-left: 0.6rem;
+}
+
+.hebergementsMarseille a h4 {
+  font-size: var(--normal-size-text);
+  margin: 9px 0 5px 0;
+}
+
+.hebergementsMarseille a p {
+  font-size: var(--card-second-text);
+}
+
+#hebergements a .etoiles {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+#hebergements a .etoiles i {
+  margin-right: -2px;
+}
+
+#hebergements a .etoiles i[data-active="true"] {
+  color: var(--main-blue);
+}
+
+#hebergements a .etoiles i[data-active="false"] {
+  color: #f2f2f2;
+}
+
+.hebergementsMarseilleContainer h5 {
+  margin-top: 1.3rem;
+  font-size: var(--bold-medium-text);
+  margin-bottom: 2.9rem;
+  font-weight: 800;
+}
+/* HEBERGEMENTS A MARSEILLE */
+
+/* HEBERGEMENTS POPULAIRES */
+
+.hebergementsPopulairesContainer {
+  width: 31%;
+  height: 685px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 2.4rem 2rem 0.5rem 2rem;
+}
+
+.hebergementsPopulairesContainer .chart {
+  position: relative;
+  float: right;
+  color: var(--main-blue);
+  font-size: var(--bold-medium-text);
+}
+
+.hebergementsPopulaires a figure {
+  margin-bottom: 2rem;
+  width: auto;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.154);
+  border-radius: 1.2rem;
+  padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+  background-color: #fff;
+}
+
+.hebergementsPopulaires a img {
+  object-fit: cover;
+  width: 37%;
+  height: 140px;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.hebergementsPopulaires a .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin-left: 0.7rem;
+}
+
+.hebergementsPopulaires a .container h4,
+p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.hebergementsPopulaires h4 {
+  font-weight: 800;
+  font-size: var(--normal-size-text);
+}
+
+.hebergementsPopulaires p {
+  font-size: var(--card-second-text);
+  padding-left: initial;
+}
+
+/* HEBERGEMENTS POPULAIRES */
+
+/* HEBERGEMENTS */
+
+/* ACTIVITES A MARSEILLE */
+
+.flexActivites {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activites {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.activites a {
+  width: 23%;
+  height: auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.154);
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.activites a img {
+  object-fit: cover;
+  width: 100%;
+  height: 388px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.activites a h4 {
+  padding: 1rem 0 1rem 1rem;
+  font-size: var(--normal-size-text);
+}
+
+/* ACTIVITES A MARSEILLE */
+
+/* MAIN */
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 4rem;
+  padding: 2.8rem 4.3rem 3rem 0rem;
+}
+
+footer h6 {
+  font-size: var(--bold-medium-text);
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+footer ul li {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  font-size: var(--normal-size-text);
+}
+
+/* FOOTER */
+@media only screen and (max-width: 992px) {
+  #hebergements {
+    flex-direction: column;
+  }
+
+  .hebergementsMarseilleContainer {
+    width: 100%;
+  }
+
+  .hebergementsPopulairesContainer {
+    height: auto;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .hebergementsPopulaires {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .hebergementsPopulaires a {
+    width: 40%;
+  }
+}
+/* MOBILE VERSION */
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  header img {
+    height: 29px;
+    object-fit: contain;
+    margin-bottom: 2rem;
+  }
+
+  header li {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 1.5rem;
+    font-size: var(--bold-medium-text);
+  }
+
+  header li:hover {
+    border-bottom: 3px solid var(--main-blue);
+    border-top: initial;
+  }
+
+  .firstSection .desktopVersion {
+    display: none;
+  }
+
+  .firstSection form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .firstSection input {
+    max-width: 235px;
+    width: 100%;
+  }
+
+  .firstSection .mobileVersion {
+    padding: 0.8rem 1rem;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-blue);
+    font-size: var(--normal-size-text);
+    font-weight: 800;
+    color: white;
+    display: initial;
+  }
+
+  .firstSection {
+    margin: 3rem 1.5rem 1rem 1.5rem;
+  }
+
+  .firstSection .filtres h2 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .firstSection .filtres {
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  .firstSection .filtres li {
+    font-size: 13px;
+    width: 200px;
+    height: 60px;
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+
+  #hebergements {
+    margin-top: 1rem;
+  }
+
+  .hebergementsPopulaires {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hebergementsPopulairesContainer {
+    margin-top: 0;
+    border-radius: initial;
+  }
+
+  .hebergementsPopulaires a figure {
+    margin-bottom: 1rem;
+  }
+
+  .hebergementsPopulaires a {
+    width: 100%;
+  }
+
+  .hebergementsMarseilleContainer {
+    order: 2;
+    background-color: #fff;
+    margin-top: initial;
+    height: auto;
+  }
+
+  .hebergementsMarseilleContainer h5 {
+    display: none;
+  }
+
+  .hebergementsMarseille a {
+    width: 100%;
+  }
+
+  .activites {
+    margin: 6rem 2rem 1rem 2rem;
+    width: initial;
+  }
+
+  .flexActivites {
+    flex-direction: column;
+  }
+
+  .flexActivites a {
+    width: 100%;
+    min-width: 250px;
+    height: 210px;
+    padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .flexActivites a img {
+    border-radius: 0.7rem 0.7rem 0 0;
+    width: 100%;
+    height: 150px;
+  }
+
+  .flexActivites a h4 {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  footer ul {
+    margin-bottom: 2rem;
+  }
+
+  footer ul h6 {
+    font-size: 21px;
+  }
+
+  footer ul li {
+    font-size: 19px;
+  }
+}
+/* MOBILE VERSION */
