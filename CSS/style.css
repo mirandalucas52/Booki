@@ -180,8 +180,8 @@ section ul i {
   color: var(--main-blue);
   margin-right: 0.7rem;
   border: 1px solid var(--grey);
-  width: 1.7rem;
-  height: 1.7rem;
+  min-width: 1.7rem;
+  min-height: 1.7rem;
   border-radius: 100%;
 }
 /* FIRST SECTION */
