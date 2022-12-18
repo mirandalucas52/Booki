@@ -609,3 +609,41 @@ footer ul li {
   }
 }
 /* MOBILE VERSION */
+
+  .flexActivites a {
+    width: 100%;
+    min-width: 250px;
+    height: 210px;
+    padding: 0.3rem 0.3rem 0.7rem 0.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .flexActivites a img {
+    border-radius: 0.7rem 0.7rem 0 0;
+    width: 100%;
+    height: 150px;
+  }
+
+  .flexActivites a h4 {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  footer ul {
+    margin-bottom: 2rem;
+  }
+
+  footer ul h6 {
+    font-size: 21px;
+  }
+
+  footer ul li {
+    font-size: 19px;
+  }
+
+/* MOBILE VERSION */
