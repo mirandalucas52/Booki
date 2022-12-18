@@ -29,6 +29,7 @@ ul {
   --main-blue: #0065fc;
   --second-blue: #deebff;
   --grey: #d9d9d9;
+  --second-grey: #f2f2f2;
   --card-shadow: 15px 0px 3px rgba(0, 0, 0, 0.1);
   --title-text: 22px;
   --bold-medium-text: 18px;
@@ -100,8 +101,8 @@ header li:hover {
   margin-right: -3px;
   border-left: none;
   border-right: none;
-  border-top: #f2f2f2 1px solid;
-  border-bottom: #f2f2f2 1px solid;
+  border-top: var(--second-grey) 1px solid;
+  border-bottom: var(--second-grey) 1px solid;
   padding: 14px 15px;
   font-size: var(--normal-size-text);
   font-weight: bold;
@@ -213,7 +214,7 @@ section ul i {
 .hebergementsMarseilleContainer {
   width: 66%;
   height: 685px;
-  background-color: #f2f2f2;
+  background-color: var(--second-grey);
   border-radius: 20px;
   padding: 2.4rem 2rem 0 2.4rem;
 }
@@ -286,7 +287,7 @@ h4,
 }
 
 #hebergements a .etoiles i[data-active="false"] {
-  color: #f2f2f2;
+  color: var(--second-grey);
 }
 
 .hebergementsMarseilleContainer h5 {
@@ -302,7 +303,7 @@ h4,
 .hebergementsPopulairesContainer {
   width: 31%;
   height: 685px;
-  background-color: #f2f2f2;
+  background-color: var(--second-grey);
   border-radius: 20px;
   padding: 2.4rem 2rem 0.5rem 2rem;
 }
@@ -403,7 +404,7 @@ footer {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: var(--second-grey);
   margin-top: 4rem;
   padding: 2.8rem 4.3rem 3rem 0rem;
 }
@@ -469,7 +470,7 @@ footer ul li {
     width: 50vw;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid var(--second-grey);
     padding-bottom: 1.5rem;
     font-size: var(--bold-medium-text);
   }
