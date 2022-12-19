@@ -24,19 +24,6 @@ a {
 ul {
   list-style: none;
 }
-
-:root {
-  --main-blue: #0065fc;
-  --second-blue: #deebff;
-  --grey: #d9d9d9;
-  --second-grey: #f2f2f2;
-  --card-shadow: 15px 0px 3px rgba(0, 0, 0, 0.1);
-  --title-text: 22px;
-  --bold-medium-text: 18px;
-  --normal-size-text: 16px;
-  --card-second-text: 14px;
-}
-
 /* HEADER */
 
 header img {
@@ -54,7 +41,7 @@ header {
 header ul {
   display: flex;
   flex-direction: row;
-  font-size: var(--normal-size-text);
+  font-size: 16px;
 }
 
 header li {
@@ -65,8 +52,8 @@ header li {
 }
 
 header li:hover {
-  color: var(--main-blue);
-  border-top: 3px solid var(--main-blue);
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
 
 /* HEADER */
@@ -75,13 +62,13 @@ header li:hover {
 
 /* FIRST SECTION */
 .firstSection h1 {
-  font-size: var(--title-text);
+  font-size: 22px;
   margin-bottom: 0.5rem;
 }
 
 .firstSection p {
   font-weight: 400;
-  font-size: var(--normal-size-text);
+  font-size: 16px;
   padding-left: initial;
 }
 
@@ -101,10 +88,10 @@ header li:hover {
   margin-right: -3px;
   border-left: none;
   border-right: none;
-  border-top: var(--second-grey) 1px solid;
-  border-bottom: var(--second-grey) 1px solid;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
   padding: 14px 15px;
-  font-size: var(--normal-size-text);
+  font-size: 16px;
   font-weight: bold;
   max-width: 12rem;
 }
@@ -118,8 +105,8 @@ header li:hover {
   border-radius: 0 1rem 1rem 0;
   border: none;
   cursor: pointer;
-  background-color: var(--main-blue);
-  font-size: var(--normal-size-text);
+  background-color: #0065fc;
+  font-size: 16px;
   font-weight: bold;
   color: white;
 }
@@ -136,7 +123,7 @@ header li:hover {
 }
 
 .firstSection .filtres h2 {
-  font-size: var(--bold-medium-text);
+  font-size: 18px;
 }
 
 .firstSection .filtres ul {
@@ -149,7 +136,7 @@ header li:hover {
   align-items: center;
   margin: 0.5rem 0 0.5rem 1.7rem;
   padding: 0.7rem 1.3rem;
-  border: 2px solid var(--grey);
+  border: 2px solid #d9d9d9;
   border-radius: 2rem;
   cursor: pointer;
   transition-duration: 0.1s;
@@ -159,18 +146,18 @@ header li:hover {
 }
 
 .firstSection .filtres li:hover {
-  background-color: var(--second-blue);
+  background-color: #deebff;
 }
 
 section ul i {
-  color: var(--main-blue);
+  color: #0065fc;
   margin-right: 0.6rem;
-  font-size: var(--title-text);
+  font-size: 22px;
   font-weight: 100;
 }
 
 .firstSection .info span {
-  font-size: var(--normal-size-text);
+  font-size: 16px;
 }
 
 .firstSection .info i {
@@ -178,9 +165,9 @@ section ul i {
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  color: var(--main-blue);
+  color: #0065fc;
   margin-right: 0.7rem;
-  border: 1px solid var(--grey);
+  border: 1px solid #d9d9d9;
   min-width: 1.7rem;
   min-height: 1.7rem;
   border-radius: 100%;
@@ -214,14 +201,14 @@ section ul i {
 .hebergementsMarseilleContainer {
   width: 66%;
   height: 685px;
-  background-color: var(--second-grey);
+  background-color: #f2f2f2;
   border-radius: 20px;
   padding: 2.4rem 2rem 0 2.4rem;
 }
 
 .mainWrapFlex h3 {
   font-weight: 800;
-  font-size: var(--title-text);
+  font-size: 22px;
   margin-bottom: 2.8rem;
 }
 
@@ -265,12 +252,12 @@ h4,
 }
 
 .hebergementsMarseille a h4 {
-  font-size: var(--normal-size-text);
+  font-size: 16px;
   margin: 9px 0 5px 0;
 }
 
 .hebergementsMarseille a p {
-  font-size: var(--card-second-text);
+  font-size: 14px;
 }
 
 #hebergements a .etoiles {
@@ -283,16 +270,16 @@ h4,
 }
 
 #hebergements a .etoiles i[data-active="true"] {
-  color: var(--main-blue);
+  color: #0065fc;
 }
 
 #hebergements a .etoiles i[data-active="false"] {
-  color: var(--second-grey);
+  color: #f2f2f2;
 }
 
 .hebergementsMarseilleContainer h5 {
   margin-top: 1.3rem;
-  font-size: var(--bold-medium-text);
+  font-size: 18px;
   margin-bottom: 2.9rem;
   font-weight: 800;
 }
@@ -303,7 +290,7 @@ h4,
 .hebergementsPopulairesContainer {
   width: 31%;
   height: 685px;
-  background-color: var(--second-grey);
+  background-color: #f2f2f2;
   border-radius: 20px;
   padding: 2.4rem 2rem 0.5rem 2rem;
 }
@@ -311,8 +298,8 @@ h4,
 .hebergementsPopulairesContainer .chart {
   position: relative;
   float: right;
-  color: var(--main-blue);
-  font-size: var(--bold-medium-text);
+  color: #0065fc;
+  font-size: 18px;
 }
 
 .hebergementsPopulaires a figure {
@@ -350,11 +337,11 @@ p {
 
 .hebergementsPopulaires h4 {
   font-weight: 800;
-  font-size: var(--normal-size-text);
+  font-size: 16px;
 }
 
 .hebergementsPopulaires p {
-  font-size: var(--card-second-text);
+  font-size: 14px;
   padding-left: initial;
 }
 
@@ -391,7 +378,7 @@ p {
 
 .activites a h4 {
   padding: 1rem 0 1rem 1rem;
-  font-size: var(--normal-size-text);
+  font-size: 16px;
 }
 
 /* ACTIVITES A MARSEILLE */
@@ -404,13 +391,13 @@ footer {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: var(--second-grey);
+  background-color: #f2f2f2;
   margin-top: 4rem;
   padding: 2.8rem 4.3rem 3rem 0rem;
 }
 
 footer h6 {
-  font-size: var(--bold-medium-text);
+  font-size: 18px;
   margin-bottom: 1.5rem;
   font-weight: 800;
 }
@@ -418,7 +405,7 @@ footer h6 {
 footer ul li {
   margin-bottom: 0.8rem;
   font-weight: 500;
-  font-size: var(--normal-size-text);
+  font-size: 16px;
 }
 
 /* FOOTER */
@@ -470,13 +457,13 @@ footer ul li {
     width: 50vw;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid var(--second-grey);
+    border-bottom: 3px solid #f2f2f2;
     padding-bottom: 1.5rem;
-    font-size: var(--bold-medium-text);
+    font-size: 18px;
   }
 
   header li:hover {
-    border-bottom: 3px solid var(--main-blue);
+    border-bottom: 3px solid #0065fc;
     border-top: initial;
   }
 
@@ -499,8 +486,8 @@ footer ul li {
     border-radius: 0 1rem 1rem 0;
     border: none;
     cursor: pointer;
-    background-color: var(--main-blue);
-    font-size: var(--normal-size-text);
+    background-color: #0065fc;
+    font-size: 16px;
     font-weight: 800;
     color: white;
     display: initial;
@@ -610,4 +597,3 @@ footer ul li {
   }
 }
 /* MOBILE VERSION */
-
