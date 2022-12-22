@@ -467,10 +467,6 @@ footer ul li {
     border-top: initial;
   }
 
-  .firstSection .desktopVersion {
-    display: none;
-  }
-
   .firstSection form {
     display: flex;
     flex-direction: row;
@@ -481,6 +477,10 @@ footer ul li {
     width: 100%;
   }
 
+  .firstSection .desktopVersion {
+    display: none;
+  }
+  
   .firstSection .mobileVersion {
     padding: 0.8rem 1rem;
     border-radius: 0 1rem 1rem 0;
